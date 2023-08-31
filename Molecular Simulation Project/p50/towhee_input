@@ -1,0 +1,7104 @@
+ensemble        
+'npt'
+temperature     
+300.00d0
+pressure        
+50.0d0
+nmolty          
+3
+nmolectyp        
+1 100 200
+numboxes        
+2
+stepstyle
+'cycles'
+nstep
+5000
+printfreq 
+25   
+blocksize 
+500
+moviefreq
+5000
+backupfreq  
+1000
+runoutput
+'none'
+pdb_output_freq
+1000
+pressure_virial_freq
+100
+trmaxdispfreq
+50
+volmaxdispfreq
+20
+linit   
+.true. 
+initboxtype
+'dimensions'
+initstyle            		
+'coords' 'none' 'none'     	
+'none' 'full cbmc' 'full cbmc'  
+initlattice          		
+'none' 'none' 'simple cubic'		
+'none' 'simple cubic' 'simple cubic' 		
+initmol            
+1 0 0              
+0 100 200          
+inix iniy iniz     
+1 1 1
+7 7 7  
+hmatrix                     
+39.758d0 0.0d0    0.0d0       
+0.0d0    20.107d0 0.0d0       
+0.0d0    0.0d0    26.738d0    
+100.0d0  0.0d0    0.0d0     
+0.0d0    100.0d0  0.0d0
+00.0d0   0.0d0    100.0d0
+pmvol     
+0.01d0   
+          pmvlpr
+          0.0d0  1.0d0  
+          rmvol
+          0.1d0
+          tavol
+          0.5d0
+pm2boxcbswap               
+0.05d0
+          pm2cbswmt        
+          0.0d0  0.5d0 1.0d0   
+          pm2cbswpr
+          1.0d0
+pm1boxcbswap               
+0.10d0
+          pm1cbswmt        
+          0.0d0 0.5d0 1.0d0
+pmtracm                    
+1.0d0
+          pmtcmt           
+          0.0d0 0.5d0 1.0d0      	
+          rmtrac
+          0.5d0 
+          tatrac
+          0.5d0
+pmrotate
+1.0d0
+          pmromt           
+          0.0d0 0.5d0 1.0d0     
+          rmrot
+          0.05d0
+          tarot
+          0.5d0
+cbmc_formulation
+'Martin and Siepmann 1999 + Martin and Thompson 2004' 
+cbmc_setting_style
+'default ideal'
+ffnumber
+1
+ff_filename
+./towhee_ff_EPM2   
+classical_potential
+'Lennard-Jones'       
+classical_mixrule
+'Explicit'
+lshift
+.false.
+ltailc
+.true.
+rmin  
+1.0d0 
+rcut  
+10.0d0
+rcutin 
+10.0d0 
+electrostatic_form
+'coulomb'
+coulombstyle
+'ewald_fixed_kmax'
+kalp 
+5.6d0
+kmax
+5
+dielect
+1.0d0
+#MFI Zeolite: ZSM-5 (do not alter the details for zeolite; add details of gas molecules after this)
+input_style
+'basic connectivity map'
+nunit
+1152
+nmaxcbmc
+1152
+lpdbnames
+F
+forcefield
+'EPM2'
+charge_assignment
+'manual'
+unit ntype qqatom
+1   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+2   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+3   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+4   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+5   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+6   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+7   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+8   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+9   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+10   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+11   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+12   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+13   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+14   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+15   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+16   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+17   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+18   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+19   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+20   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+21   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+22   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+23   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+24   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+25   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+26   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+27   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+28   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+29   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+30   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+31   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+32   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+33   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+34   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+35   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+36   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+37   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+38   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+39   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+40   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+41   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+42   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+43   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+44   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+45   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+46   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+47   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+48   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+49   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+50   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+51   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+52   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+53   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+54   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+55   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+56   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+57   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+58   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+59   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+60   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+61   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+62   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+63   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+64   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+65   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+66   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+67   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+68   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+69   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+70   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+71   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+72   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+73   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+74   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+75   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+76   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+77   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+78   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+79   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+80   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+81   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+82   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+83   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+84   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+85   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+86   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+87   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+88   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+89   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+90   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+91   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+92   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+93   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+94   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+95   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+96   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+97   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+98   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+99   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+100   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+101   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+102   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+103   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+104   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+105   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+106   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+107   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+108   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+109   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+110   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+111   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+112   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+113   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+114   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+115   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+116   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+117   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+118   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+119   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+120   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+121   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+122   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+123   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+124   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+125   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+126   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+127   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+128   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+129   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+130   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+131   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+132   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+133   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+134   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+135   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+136   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+137   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+138   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+139   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+140   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+141   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+142   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+143   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+144   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+145   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+146   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+147   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+148   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+149   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+150   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+151   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+152   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+153   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+154   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+155   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+156   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+157   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+158   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+159   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+160   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+161   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+162   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+163   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+164   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+165   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+166   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+167   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+168   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+169   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+170   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+171   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+172   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+173   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+174   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+175   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+176   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+177   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+178   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+179   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+180   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+181   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+182   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+183   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+184   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+185   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+186   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+187   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+188   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+189   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+190   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+191   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+192   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+193   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+194   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+195   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+196   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+197   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+198   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+199   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+200   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+201   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+202   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+203   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+204   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+205   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+206   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+207   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+208   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+209   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+210   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+211   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+212   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+213   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+214   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+215   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+216   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+217   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+218   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+219   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+220   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+221   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+222   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+223   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+224   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+225   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+226   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+227   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+228   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+229   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+230   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+231   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+232   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+233   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+234   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+235   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+236   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+237   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+238   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+239   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+240   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+241   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+242   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+243   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+244   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+245   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+246   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+247   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+248   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+249   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+250   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+251   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+252   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+253   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+254   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+255   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+256   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+257   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+258   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+259   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+260   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+261   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+262   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+263   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+264   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+265   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+266   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+267   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+268   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+269   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+270   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+271   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+272   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+273   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+274   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+275   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+276   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+277   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+278   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+279   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+280   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+281   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+282   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+283   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+284   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+285   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+286   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+287   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+288   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+289   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+290   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+291   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+292   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+293   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+294   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+295   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+296   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+297   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+298   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+299   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+300   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+301   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+302   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+303   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+304   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+305   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+306   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+307   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+308   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+309   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+310   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+311   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+312   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+313   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+314   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+315   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+316   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+317   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+318   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+319   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+320   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+321   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+322   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+323   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+324   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+325   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+326   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+327   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+328   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+329   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+330   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+331   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+332   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+333   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+334   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+335   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+336   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+337   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+338   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+339   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+340   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+341   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+342   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+343   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+344   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+345   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+346   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+347   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+348   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+349   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+350   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+351   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+352   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+353   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+354   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+355   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+356   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+357   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+358   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+359   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+360   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+361   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+362   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+363   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+364   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+365   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+366   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+367   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+368   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+369   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+370   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+371   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+372   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+373   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+374   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+375   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+376   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+377   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+378   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+379   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+380   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+381   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+382   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+383   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+384   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+385   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+386   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+387   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+388   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+389   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+390   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+391   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+392   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+393   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+394   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+395   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+396   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+397   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+398   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+399   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+400   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+401   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+402   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+403   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+404   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+405   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+406   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+407   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+408   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+409   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+410   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+411   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+412   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+413   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+414   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+415   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+416   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+417   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+418   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+419   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+420   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+421   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+422   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+423   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+424   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+425   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+426   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+427   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+428   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+429   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+430   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+431   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+432   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+433   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+434   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+435   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+436   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+437   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+438   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+439   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+440   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+441   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+442   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+443   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+444   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+445   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+446   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+447   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+448   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+449   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+450   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+451   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+452   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+453   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+454   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+455   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+456   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+457   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+458   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+459   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+460   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+461   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+462   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+463   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+464   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+465   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+466   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+467   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+468   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+469   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+470   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+471   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+472   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+473   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+474   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+475   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+476   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+477   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+478   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+479   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+480   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+481   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+482   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+483   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+484   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+485   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+486   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+487   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+488   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+489   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+490   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+491   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+492   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+493   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+494   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+495   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+496   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+497   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+498   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+499   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+500   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+501   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+502   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+503   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+504   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+505   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+506   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+507   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+508   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+509   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+510   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+511   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+512   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+513   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+514   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+515   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+516   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+517   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+518   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+519   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+520   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+521   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+522   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+523   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+524   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+525   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+526   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+527   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+528   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+529   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+530   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+531   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+532   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+533   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+534   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+535   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+536   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+537   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+538   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+539   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+540   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+541   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+542   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+543   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+544   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+545   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+546   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+547   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+548   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+549   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+550   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+551   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+552   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+553   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+554   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+555   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+556   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+557   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+558   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+559   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+560   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+561   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+562   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+563   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+564   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+565   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+566   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+567   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+568   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+569   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+570   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+571   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+572   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+573   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+574   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+575   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+576   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+577   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+578   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+579   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+580   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+581   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+582   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+583   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+584   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+585   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+586   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+587   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+588   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+589   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+590   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+591   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+592   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+593   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+594   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+595   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+596   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+597   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+598   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+599   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+600   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+601   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+602   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+603   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+604   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+605   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+606   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+607   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+608   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+609   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+610   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+611   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+612   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+613   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+614   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+615   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+616   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+617   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+618   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+619   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+620   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+621   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+622   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+623   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+624   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+625   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+626   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+627   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+628   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+629   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+630   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+631   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+632   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+633   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+634   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+635   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+636   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+637   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+638   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+639   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+640   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+641   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+642   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+643   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+644   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+645   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+646   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+647   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+648   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+649   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+650   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+651   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+652   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+653   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+654   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+655   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+656   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+657   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+658   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+659   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+660   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+661   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+662   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+663   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+664   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+665   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+666   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+667   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+668   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+669   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+670   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+671   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+672   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+673   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+674   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+675   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+676   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+677   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+678   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+679   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+680   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+681   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+682   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+683   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+684   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+685   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+686   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+687   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+688   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+689   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+690   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+691   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+692   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+693   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+694   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+695   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+696   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+697   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+698   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+699   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+700   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+701   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+702   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+703   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+704   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+705   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+706   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+707   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+708   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+709   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+710   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+711   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+712   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+713   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+714   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+715   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+716   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+717   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+718   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+719   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+720   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+721   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+722   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+723   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+724   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+725   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+726   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+727   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+728   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+729   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+730   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+731   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+732   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+733   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+734   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+735   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+736   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+737   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+738   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+739   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+740   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+741   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+742   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+743   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+744   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+745   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+746   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+747   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+748   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+749   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+750   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+751   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+752   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+753   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+754   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+755   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+756   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+757   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+758   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+759   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+760   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+761   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+762   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+763   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+764   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+765   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+766   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+767   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+768   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+769   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+770   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+771   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+772   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+773   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+774   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+775   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+776   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+777   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+778   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+779   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+780   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+781   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+782   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+783   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+784   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+785   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+786   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+787   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+788   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+789   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+790   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+791   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+792   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+793   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+794   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+795   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+796   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+797   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+798   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+799   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+800   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+801   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+802   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+803   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+804   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+805   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+806   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+807   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+808   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+809   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+810   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+811   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+812   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+813   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+814   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+815   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+816   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+817   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+818   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+819   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+820   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+821   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+822   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+823   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+824   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+825   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+826   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+827   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+828   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+829   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+830   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+831   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+832   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+833   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+834   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+835   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+836   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+837   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+838   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+839   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+840   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+841   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+842   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+843   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+844   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+845   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+846   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+847   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+848   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+849   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+850   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+851   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+852   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+853   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+854   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+855   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+856   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+857   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+858   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+859   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+860   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+861   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+862   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+863   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+864   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+865   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+866   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+867   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+868   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+869   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+870   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+871   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+872   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+873   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+874   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+875   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+876   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+877   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+878   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+879   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+880   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+881   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+882   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+883   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+884   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+885   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+886   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+887   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+888   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+889   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+890   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+891   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+892   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+893   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+894   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+895   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+896   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+897   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+898   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+899   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+900   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+901   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+902   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+903   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+904   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+905   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+906   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+907   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+908   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+909   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+910   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+911   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+912   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+913   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+914   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+915   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+916   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+917   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+918   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+919   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+920   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+921   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+922   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+923   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+924   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+925   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+926   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+927   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+928   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+929   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+930   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+931   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+932   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+933   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+934   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+935   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+936   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+937   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+938   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+939   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+940   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+941   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+942   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+943   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+944   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+945   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+946   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+947   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+948   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+949   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+950   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+951   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+952   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+953   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+954   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+955   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+956   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+957   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+958   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+959   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+960   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+961   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+962   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+963   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+964   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+965   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+966   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+967   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+968   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+969   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+970   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+971   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+972   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+973   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+974   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+975   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+976   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+977   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+978   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+979   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+980   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+981   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+982   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+983   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+984   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+985   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+986   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+987   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+988   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+989   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+990   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+991   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+992   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+993   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+994   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+995   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+996   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+997   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+998   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+999   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1000   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1001   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1002   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1003   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1004   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1005   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1006   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1007   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1008   Si   1.413
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1009   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1010   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1011   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1012   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1013   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1014   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1015   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1016   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1017   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1018   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1019   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1020   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1021   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1022   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1023   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1024   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1025   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1026   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1027   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1028   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1029   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1030   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1031   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1032   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1033   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1034   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1035   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1036   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1037   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1038   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1039   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1040   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1041   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1042   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1043   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1044   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1045   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1046   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1047   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1048   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1049   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1050   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1051   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1052   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1053   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1054   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1055   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1056   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1057   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1058   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1059   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1060   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1061   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1062   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1063   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1064   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1065   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1066   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1067   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1068   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1069   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1070   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1071   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1072   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1073   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1074   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1075   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1076   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1077   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1078   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1079   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1080   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1081   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1082   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1083   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1084   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1085   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1086   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1087   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1088   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1089   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1090   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1091   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1092   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1093   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1094   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1095   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1096   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1097   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1098   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1099   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1100   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1101   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1102   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1103   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1104   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1105   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1106   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1107   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1108   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1109   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1110   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1111   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1112   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1113   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1114   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1115   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1116   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1117   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1118   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1119   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1120   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1121   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1122   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1123   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1124   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1125   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1126   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1127   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1128   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1129   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1130   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1131   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1132   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1133   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1134   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1135   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1136   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1137   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1138   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1139   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1140   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1141   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1142   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1143   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1144   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1145   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1146   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1147   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1148   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1149   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1150   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1151   O   -0.7065
+vibration
+0
+improper torsion
+0
+unit ntype qqatom
+1152   O   -0.7065
+vibration
+0
+improper torsion
+0
+#EPM2 CO2             
+input_style
+'basic connectivity map'
+nunit                        
+3
+nmaxcbmc                     
+3
+lpdbnames
+F
+forcefield                   
+'EPM2'
+charge_assignment
+'bond increment'
+unit ntype qqatom            
+1    O_EPM2   0
+vibration                    
+1
+2
+improper torsion             
+0
+unit ntype qqatom            
+2    C_EPM2   0
+vibration                    
+2
+1 3
+improper torsion             
+0
+unit ntype qqatom            
+3   O_EPM2  0
+vibration                    
+1
+2
+improper torsion             
+0
+#EPM2 Methane             
+input_style
+'basic connectivity map'
+nunit                        
+1
+nmaxcbmc                     
+1
+lpdbnames
+F
+forcefield                   
+'EPM2'
+charge_assignment
+'manual'
+unit ntype qqatom            
+1    CH4    0
+#In vibration, first entry is the number of bonds of the current atom; 
+#If first entry is not zero, the second entry is the unit number(s) of the atom(s) (separated by space) to which the current atom is bonded
+vibration                    
+0
+improper torsion             
+0
+#Add more entries if the molecule is diatomic/polyatomic, and also for other tyeps of molecules if the system is a mixture
